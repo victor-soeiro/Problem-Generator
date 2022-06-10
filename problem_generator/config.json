@@ -1,0 +1,26 @@
+{
+  "GROUPS": {
+    "default": [
+      "<value>"
+    ],
+    "auto": [
+      "ônibus",
+      "caminhão",
+      "carro",
+      "moto"
+    ],
+    "male_names": [
+      "Carlos",
+      "Ricardo",
+      "Victor",
+      "Mario",
+      "Renato"
+    ],
+    "projectiles": [
+      "pedra",
+      "bola",
+      "brinquedo",
+      "bola de canhão"
+    ]
+  }
+}
