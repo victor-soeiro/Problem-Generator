@@ -1,7 +1,7 @@
 """ problem_generator """
 
-from os.path import join, dirname
-from json import load
+import os.path
+import json
 
 
 __CONFIG__ = 'config.json'
@@ -12,5 +12,5 @@ MODIFIER_INITIALIZER = '|'
 MODIFIER_VALUE_DEFINITION = '='
 MODIFIER_SEPARATOR = ';'
 
-with open(join(dirname(__file__), __CONFIG__), 'r', encoding='utf-8') as file:
-    CONFIG = load(file)
+with open(os.path.join(os.path.dirname(__file__), __CONFIG__), 'r', encoding='utf-8') as file:
+    CONFIG = json.load(file)

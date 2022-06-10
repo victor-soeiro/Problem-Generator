@@ -1,7 +1,3 @@
-""" problem_generator.modifiers.classes
-
-This package imports all modifiers classes to initialize the parser dictionary.
-
-"""
+""" problem_generator.modifiers """
 
 from .classes import *

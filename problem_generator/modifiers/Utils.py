@@ -9,7 +9,14 @@ from problem_generator.modifiers.Base import Modifier
 
 
 def get_sections(text: str) -> Tuple[str, str]:
-    """"""
+    """ Get all Section within a Text.
+
+    Args:
+        text: The text containing the variables.
+
+    Returns:
+        The metadata and question section.
+    """
 
     lines = text.split('\n')
 

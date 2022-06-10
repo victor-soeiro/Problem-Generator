@@ -26,6 +26,20 @@ class Modifier:
         self.set_arguments(**kwargs)
 
     def get_argument(self, key: str, default: any = None, type_: Type = float, parse: bool = True, **kwargs) -> any:
+        """ Get the Given Argument.
+
+        Args:
+            key: The argument name.
+            default: Default value if not defined.
+            type_: The returned type.
+            parse: True to parse a math expression.
+
+        Kwargs:
+            The correlated arguments.
+
+        Returns:
+            An argument value.
+        """
         value = str(self.args.get(key, default))
 
         if parse:
@@ -40,7 +54,7 @@ class Modifier:
             return type_(value)
 
     def set_arguments(self, **kwargs) -> None:
-        """ Set All Given Arguments, if Possible.
+        """ Set All Given Arguments.
 
         Kwargs:
             The Modifier Arguments and it's Values.
